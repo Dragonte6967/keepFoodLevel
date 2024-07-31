@@ -1,0 +1,1 @@
+keep player's food level after respawn
