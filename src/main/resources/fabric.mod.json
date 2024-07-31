@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "keepfoodlevel",
+  "version": "${version}",
+  "name": "keepFoodLevel",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "GPL-3.0",
+  "icon": "assets/keepfoodlevel/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "top.dragonte.keepfoodlevel.Keepfoodlevel"
+    ]
+  },
+  "mixins": [
+    "keepfoodlevel.mixins.json",
+    {
+      "config": "keepfoodlevel.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
